@@ -4,17 +4,11 @@ font-family: "Microsoft yahei";
 }
 
 
- .clearfix:after,.clearfix:before{
+ .clearfix::after{
         content: "";
-        display: table;
+        display: block;
+		clear: both;
     }
-    .clearfix:after{
-        clear: both;
-    }
-    .clearfix{
-        *zoom: 1;
-    }
-
 
 .heAder
 {
@@ -547,7 +541,6 @@ font-size: 22px;
 	width: 100%;
 	float: left;
 	height: 460px;
-	border-top: 1px solid #e5e5e5;
 	background: #fff;
 	min-width:1171px;
 }
@@ -592,23 +585,66 @@ font-size: 22px;
 .mainFooto
 {
 	width: 100%;
-	float: left;
 	height: 376px;
 	background: #fff;
 	min-width:1171px;
+	border-bottom: 1px solid #e5e5e5;
+	overflow: hidden;
 }
 
-.mainFooto .box
+.mainFooto .box1
 {
-		width: 20%;
+	width: 571px;
 	height: 376px;
 	float: left;
-	background: red;
+	background: #f1e4ca;
+	border-radius: 5px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	cursor: pointer;
+	
 }
 
 .mainFooto .box2
 {
-	width: 20%;
-	height: 376px;
-	float: right;
+	background: #88b3e2;
+	margin-left:29px;
+}
+
+.mainFooto .Toos
+{
+	margin-top: 376px;
+	border-radius: 5px;
+
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	width: 569px;
+	height: 173px;
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	transition: margin-top 0.5s; 
+
+}
+
+.mainFooto .Toos .tocenter
+{
+	margin-left: 33px;
+}
+
+.mainFooto .box1:hover .Toos
+{
+	transition: margin-top 0.5s; 
+	margin-top: 202px;
+		
+}
+ 
+.mainFooto  .Toos .setp{
+	font-size: 14px;
+	color: #acacac;
+	margin-top: 34px;
+	margin-bottom: 16px;
+}
+
+.mainFooto  .Toos .seth{
+	font-size: 21px;
 }
