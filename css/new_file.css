@@ -4,6 +4,30 @@ font-family: "Microsoft yahei";
 }
 
 
+/*1、去除chrome等浏览器默认发光边框*/
+
+ input:focus, textarea:focus {
+	 outline: none;
+ }
+/*这样textarea在选中的时候，文字会有点移动，解决方法：*/
+input:focus, textarea:focus {
+	outline: none;
+	　　　　border: 1px solid #ccc;/*跟进textarea背景颜色来定*/
+}
+
+/*这样也可以解决更改选中时的颜色值，已达到给用户反馈的效果*/
+/*2、去除IE10+浏览器文本框后面的小叉叉*/
+ input::-ms-clear {
+	 display: none;
+ }
+
+/*3、禁止多行文本框textarea拖拽*/
+ textarea {
+	 resize: none;
+ }
+/*这样就不能放大缩小*/
+
+
  .clearfix::after{
         content: "";
         display: block;
@@ -171,7 +195,7 @@ font-family: "Microsoft yahei";
 
 
 
-.heAder .searchInput  .font .inpurs::-ms-expand { display: none; }
+ .inpurs::-ms-expand { display: none; }
 
 .heAder .content .msg
 {
@@ -647,4 +671,143 @@ font-size: 22px;
 
 .mainFooto  .Toos .seth{
 	font-size: 21px;
+}
+
+.footBottom
+{
+	width: 100%;
+	height: 822px;
+	background: #fff;
+	min-width:1171px;
+	border-bottom: 1px solid #e5e5e5;
+	
+}
+
+.footBottom .Tbox
+{
+	float: right;
+	height: 822px;
+	width: 587px;
+	background: #fff;
+}
+
+.footBottom .Tbox h2
+{
+	font-size: 32px;
+	margin-top: 105px;
+	margin-bottom: 44px;
+}
+
+.footBottom .Tbox p
+{
+	font-size: 17px;
+	color: #989898;
+	margin-bottom: 47px;
+}
+
+.footBottom .Tbox a
+{
+	color: #9376df;
+}
+
+.footBottom .Tbox h1
+  {
+	  margin-bottom: 32px;
+	  color: #9376df;
+  }
+
+
+.footBottom .Tbox .toosh
+{
+	margin-bottom: 57px;
+}
+
+
+.footBottom .Tbox .nameText
+  {
+	  text-indent: 2em;
+	  width: 236px;
+	  height: 61px;
+	  line-height: 61px;
+	  font-size: 17px;
+	  border: 1px solid transparent;
+	  border-radius: 10px;
+	  background: #f8f8f8;
+  }
+
+.footBottom .Tbox .MessageText
+{
+	height: 120px;
+	width: 100%;
+	padding-top: 23px;
+	text-indent: 2em;
+	font-size: 17px;
+	overflow: hidden;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	background: #f8f8f8;
+	margin-top: 25px;
+}
+
+
+.footBottom .Tbox .butt
+{
+	margin-top: 25px;
+	display: block;
+	width: 210px;
+	height: 62px;
+	background: #8a6cda;
+	border-radius: 8px;
+	line-height: 62px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	-moz-box-shadow:5px 10px  15px #e5e0f3;
+	-webkit-box-shadow:5px 10px  15px #e5e0f3;
+	box-shadow:5px 10px  15px #e5e0f3;
+}
+.footBottom .Tbox .inpurs
+{
+
+	margin-left: 20px;
+	background: url(../img/buttn.png) no-repeat 65px center #eaedef;
+	height: 62px;
+	line-height: 62px;
+	padding-left: 18px;
+	width: 107px;
+	font-size: 17px;
+	color: #909090;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	cursor: pointer;
+	appearance:none;
+	-moz-appearancem:none;
+	-webkit-appearance:none; /*兼容苹果手机*/
+	-ms-appearance:none;
+	outline:none;
+	-webkit-tap-highlight-color: #fff;
+/*防止紧紧靠在边上*/
+	-moz-user-select: none; /*火狐*/
+	-webkit-user-select: none; /*webkit浏览器*/
+	-ms-user-select: none; /*IE10*/
+	-khtml-user-select: none; /*早期浏览器*/
+	user-select: none;
+}
+
+.footBottom .Tbox .code
+{
+	margin-left: -10px;
+	height: 62px;
+	width: 210px;
+	text-indent: 2em;
+	font-size: 17px;
+	overflow: hidden;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	background: #f8f8f8;
+	margin-top: 25px;
 }
