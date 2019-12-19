@@ -200,7 +200,7 @@ input:focus, textarea:focus {
 .heAder .content .msg
 {
 	border: 1px solid #e6e6e6;
-	margin-top: 180px;
+	margin-top: 185px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 468px;
@@ -712,14 +712,14 @@ font-size: 22px;
 
 .footBottom .Tbox h1
   {
-	  margin-bottom: 32px;
+	  margin-bottom: 28px;
 	  color: #9376df;
   }
 
 
 .footBottom .Tbox .toosh
 {
-	margin-bottom: 57px;
+	margin-bottom: 37px;
 }
 
 
@@ -810,4 +810,66 @@ font-size: 22px;
 	border-bottom-left-radius: 0px;
 	background: #f8f8f8;
 	margin-top: 25px;
+}
+
+.footnav
+{
+	width: 100%;
+	height:520px;
+	background: #fbfbfb;
+	min-width:1171px;
+
+}
+
+.navshei
+{
+	height: 434px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.fotcenter
+{
+	padding-top: 104px;
+}
+
+.boxtoo
+{
+	float: left;
+	margin-right: 168px;
+}
+
+.fotcenter .boxtoo h2
+{
+	font-size: 17px;
+}
+
+.fotcenter .boxtoo ul
+{
+	list-style: none;
+	margin-top: 33px;
+}
+
+.fotcenter .boxtoo li
+{
+	margin-bottom:18px ;
+}
+
+
+.fotcenter .boxtoo a
+{
+	text-decoration: none;
+	color: #6b6b6b;
+	font-size: 15px;
+}
+
+
+.fotcenter .boxtoo h6
+{
+	font-size: 16px;
+}
+
+.content .atrm
+{
+	color: #c5c5c5;
+	font-size: 14px;
 }
